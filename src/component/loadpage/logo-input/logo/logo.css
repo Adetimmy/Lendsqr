@@ -9,7 +9,6 @@ gap: 3rem;
 img{
     width: 100%;
     object-fit: cover;
-    background: red;
 }
 .logo__head{
     display: flex;

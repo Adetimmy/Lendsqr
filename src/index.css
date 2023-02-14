@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700;900&family=Work+Sans:wght@400;500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+:root{
+    --primary-font:"Prompt", sans-serif;
+    --secondary-font:"Work Sans", sans-serif;
+    --primary-color:#213f7d;
+    --secondary-color:#545F7D;
+    --button-color:#39CDCC;
+    --neutral-white : #fff;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+body{
+    font-family: var(--secondary-font);
+}

@@ -1,0 +1,63 @@
+.control__input{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+
+    gap: 1rem;
+    width: 100%;
+}
+.control__input--password{
+    display: flex;
+    position: relative;
+}
+.control__input--password p{
+    position: absolute;
+    top: 1rem;
+    color: var(--button-color);
+    right: 1rem;
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+ 
+}
+
+.control__input input{
+    width: 447px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 2px solid rgba(84, 95, 125, 0.15);
+    border-radius: 5px;
+    padding:0 1rem;
+    }
+.control__input input:focus{
+    outline-color:var(--button-color);
+}
+.control__input input::placeholder{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: var(--secondary-color);
+    opacity: 0.6;
+}
+@media screen and (max-width:550px) {
+    .control__input input{
+        width:345px;
+        height: 40px;
+        padding:0 .7rem;
+        }
+        .control__input--password p{
+            font-weight: 400;
+            font-size: 9px;
+            line-height: 12px;
+         
+        }
+        .control__input input::placeholder{
+            font-size: 11px;
+            line-height: 15px;
+        }
+}

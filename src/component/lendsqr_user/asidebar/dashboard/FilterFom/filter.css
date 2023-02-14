@@ -1,0 +1,82 @@
+
+.form{
+    width: 100%;
+    max-width: 270px;
+    height: 600px;
+
+    background: #FFFFFF;
+    position: absolute;
+    border: 1px solid rgba(84, 95, 125, 0.14);
+    box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    flex-flow: wrap;
+    padding: .2rem 1rem;
+    z-index: 6;
+}
+.form label{
+    display: flex;
+    margin-top: 3px;
+    flex: 1;
+    align-items: flex-start;
+    flex-flow:column wrap;
+    font-family: var(--secondary-font);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color:var(--secondary-color);
+}
+
+.form input, #org{
+    Width:230px;
+    Height:40px;
+    outline: 1px solid ;
+    padding: 4px;
+    border-radius: 6px;
+    margin: 9px 0;
+    color: var(--secondary-color);
+}
+.form__btn{
+    flex: 1;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.form__btn-filter, .form__btn-reset{
+    width: 98px;
+    height: 40px;
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    border-radius:8px ;
+}
+.form__btn-filter{
+    color: #fff;
+    background: var(--button-color);
+}
+.form__btn-reset{
+   
+    color: var(--secondary-color);
+    outline: 1px solid var(--secondary-color);
+}
+.date{
+    position: relative;
+}
+.date svg{
+    position: absolute;
+    right: 12px;
+    top: 2.3rem;
+}
+#date:placeholder-shown{
+    background: blue;
+    appearance: none;
+}
+#status{
+    width: inherit;
+}

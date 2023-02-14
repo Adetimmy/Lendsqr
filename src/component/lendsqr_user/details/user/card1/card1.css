@@ -1,0 +1,180 @@
+.card1__container{
+    background: #fff;
+    box-shadow:1px 1px 5px rgba(0,0,0, .5);
+    padding: 2rem 2rem 0;
+    border-radius: 8px;
+    margin-top: 1.5rem;
+    position: relative;
+    overflow: hidden;
+}
+.card1__container-contact{
+   display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+.card1__container-contact--icon{
+display: flex;
+align-items: center;
+}
+.card1__container-contact--icon img{
+    width: 100px;
+    height: 100px;
+}
+.card1__container-contact--icon .contact__name{
+    display: flex;
+    flex-direction: column;
+    margin:0 1rem;
+
+}
+.card1__container-contact--icon .contact__name h2, .contact__name h2{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+
+    color: var(--primary-color);
+
+}
+
+.card1__container-contact--icon .contact__name p,.contact__name p{
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top:.5rem ;
+/* identical to box height */
+
+
+    color: var(--secondary-color);
+
+}
+.strike::first-letter{
+    text-decoration: line-through;
+}
+.card1__container-rate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin:0 1.5rem;
+    border-left: 1px solid rgba(84, 95, 125, .4);
+    border-right:1px solid rgba(84, 95, 125, .4);
+
+}
+.card1__container-rate p{
+    font-family:var(--secondary-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color:var(--secondary-color);
+
+}
+ .rate{
+    display: flex;
+ }
+ .rate img{
+    width: 16px;
+    height: 16px;
+    margin-top: .5rem;
+ }
+ .rate img:nth-child(2){
+  margin:0 5px;
+   margin-top: .5rem;
+ }
+ .contact__section{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    transition: all .35s cubic-bezier(0, 1.31, 0, -0.03);;
+ }
+ .contact__section-icon{
+display: none;
+ }
+ .contact__section p{
+    font-family:var(--secondary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding: .2rem 1.2rem;
+    transition: all .35s ease;
+ }
+ .contact__section .active{
+    color: var(--button-color);
+    border-bottom:3.5px solid  var(--button-color) ;
+ }
+
+  .contact__section p:active:not(.active){
+    color: var(--button-color);
+    border-bottom:3.5px solid  var(--button-color) ;
+  }
+@media screen and (max-width:1200px) {
+    .card1__container-contact{
+        flex-flow:wrap;
+        justify-content: space-between;
+        margin-top: 5rem;
+     }
+     .card1__container-rate{
+        display: none;
+     }
+     .card1__container-contact--icon img{
+        position: absolute;
+        left: calc(50% - 50px);
+        top: 0;
+        margin: 1rem 0;
+     }
+}
+@media screen and (max-width:700px) {
+    .card1__container-contact--icon .contact__name h2, .contact__name h2{
+        font-size: 15px;
+        line-height: 18px;
+        margin-top: 2rem;
+    }
+    .card1__container-contact--icon .contact__name p,.contact__name p{
+        font-size: 11px;
+        line-height: 14px;
+    }
+    .contact__section p{
+        font-size: 12px;
+        line-height: 15px;
+        display: none;
+    }
+    .contact__section .active, .contact__section span:active:not(.active){
+        color:#fff;
+        border: 0;
+        width: 18px;
+        height: 18px;
+        background: #000;
+        text-align: center;
+        border-radius: 50%;
+     }
+    .contact__section-icon{
+        display: block;
+    }
+    .contact__section{
+        /* flex-direction: column; */
+        align-items: flex-start;
+        transform: translateY(100%); 
+    }
+    .card1__container:hover  .contact__section{
+        transform: translateY(0%); 
+    }
+
+}
+@media screen and (max-width:990px){
+
+    .contact__section p{
+        font-size: 12px;
+        line-height: 15px;
+    
+    }
+}
+@media screen and (max-width:800px){
+
+    .contact__section p{
+        font-size: 9px;
+        line-height: 15px;
+    
+    }
+}

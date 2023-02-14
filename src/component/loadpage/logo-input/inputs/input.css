@@ -1,0 +1,85 @@
+.logopage__input{
+    display: grid;
+}
+.logopage__input--welcome{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: .6;
+    align-self: flex-start;
+    
+}
+.logopage__input--inputs{
+    width: 100%;
+    align-self: flex-start;
+}
+.logopage__input--welcome h1{
+    font-family: var(--primary-font);
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.04em;
+    color: var( --primary-color);
+}
+.logopage__input--welcome p{
+    font-family: var(--primary-font);
+    font-weight: 400;
+    margin:1rem 0 1.5rem 0;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--secondary-color);
+}
+.logopage__input--inputs-4gotpassword{
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: var( --button-color);
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+.logopage__input button{
+    background:var(--button-color);
+    border-radius: 8px;
+    width: 447px;
+    height: 48px;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top: 2rem;
+    border: 0;
+    align-self: baseline;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase; 
+    color:var( --neutral-white);
+}
+
+@media screen and (max-width:550px) {
+    .logopage__input--welcome h1{
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 35px; 
+    }
+    .logopage__input--welcome p{
+        font-size: 14px;
+        line-height: 20px;
+       
+    }
+    .logopage__input button{
+        width: 345px;
+        height: 40px;
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .logopage__input--inputs-4gotpassword{
+        font-size: 9px;
+        line-height: 12px;
+
+    }
+}
